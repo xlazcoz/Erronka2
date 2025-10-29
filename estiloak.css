@@ -14,7 +14,7 @@ header {
     position: relative;
 }
 
-nav {
+nav>ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +103,12 @@ details[open] summary {
 summary:hover {
     background-color: #3e3666;
 }
-
+.PribatutasunPolitika{
+    color:white;
+}
+.CookiePolitika{
+    color:white;
+}
 footer {
   position: fixed;
   bottom: 0;
