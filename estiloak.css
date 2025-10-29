@@ -1,11 +1,48 @@
 body {
-    
-    background-color: #f0dfdf;
-  
 
-        
+    background-color: #3e3666;
+
+
 }
-.goikomenua{
 
+header {
+
+    background-color: #2d2749;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>ul {
+    display: flex;
     list-style-type: none;
+    position: relative;
+
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+nav>ul>li {
+    margin: 0 15px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+#goikomenua>nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.logoa {
+
+    width: 130px;
+    border-radius: 50px;
+
+
 }
