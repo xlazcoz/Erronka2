@@ -14,7 +14,7 @@ header {
     position: relative;
 }
 
-nav>ul {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
