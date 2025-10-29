@@ -1,55 +1,104 @@
 body {
-
     background-color: #3e3666;
+
 
 }
 
 header {
-
     background-color: #2d2749;
-    margin: 0px;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    position: relative;
 }
 
-footer{
-
-    background-color: #2d2749;
-    margin: 0px;
-    padding: 10px;
-}
 nav>ul {
     display: flex;
-    list-style-type: none;
-    position: relative;
-
-}
-
-nav>ul>li>a {
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-}
-
-nav>ul>li {
-    margin: 0 15px;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-
-}
-
-#goikomenua>nav {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
 
+details {
+    position: static;
+}
+
+summary {
+    background-color: #2d2749;
+    list-style: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '\2630';
+    font-size: 1.8rem;
+}
+
+details[open] summary::before {
+    content: '\2715'; 
+}
+
+details[open] summary {
+    background-color: #3e3666;
+}
+
+.menua {
+    background-color: #2d2749;
+    padding: 15px 0px;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%; /* Cambiado de top: 100% a 50% */
+    margin-top: -25px; /* Ajusta para centrar verticalmente */
+    z-index: 1000;
+    min-width: max-content;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 80%; 
+    max-width: 600px;
+}
+
+.menua li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; /* Espacio entre items */
+}
+
+.menua li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 8px 16px;
+    display: block;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.menua li a:hover {
+    color: #00ff2f;
+    background: rgb(191, 38, 237);
 }
 
 .logoa {
-
     width: 130px;
     border-radius: 50px;
+}
 
-
+summary:hover {
+    background-color: #3e3666;
 }
 
 footer {
