@@ -44,7 +44,7 @@ summary::-webkit-details-marker {
 
 summary::before {
     content: '\2630';
-    font-size: 1.8rem;
+    font-size: 30px;
 }
 
 details[open] summary::before {
@@ -52,8 +52,12 @@ details[open] summary::before {
 }
 
 details[open] summary {
+    background-color: #2d2749;
+}
+details[open] summary:hover {
     background-color: #3e3666;
 }
+
 
 .menua {
     background-color: #2d2749;
@@ -64,13 +68,9 @@ details[open] summary {
     transform: translateX(-50%);
     top: 50%; 
     margin-top: -25px; 
-    z-index: 1000;
-    min-width: max-content;
     border: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
-    width: 80%; 
-    max-width: 600px;
 }
 
 .menua li {
@@ -86,12 +86,12 @@ details[open] summary {
     border-radius: 4px;
     padding: 8px 16px;
     display: block;
-    transition: all 0.3s ease;
-    font-size: 1rem;
+    transition: all 1s ease;
+    font-size: 20px;
 }
 
 .menua li a:hover {
-    color: #a575a5;
+    color: #8a7ec7;
     background: #3e3666;;
 }
 
@@ -103,6 +103,7 @@ details[open] summary {
 summary:hover {
     background-color: #3e3666;
 }
+
 .PribatutasunPolitika{
     color:white;
 }
@@ -115,9 +116,15 @@ footer {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #2d2749;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 footer>a{
     text-decoration: none;
     color:white;
+}
+img:hover {
+    transform: scale(1.10);
 }
