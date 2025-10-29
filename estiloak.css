@@ -3,7 +3,9 @@
     
 }
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3e3666;
+    line-height: 1.6;
 }
 
 header {
