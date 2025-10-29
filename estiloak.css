@@ -1,7 +1,7 @@
 body {
     background-color: #3e3666;
-    margin: 0;
-    padding: 0;
+
+
 }
 
 header {
@@ -99,4 +99,17 @@ details[open] summary {
 
 summary:hover {
     background-color: #3e3666;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer>a{
+    text-decoration: none;
+    color:white;
 }
