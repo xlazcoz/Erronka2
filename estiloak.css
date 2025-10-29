@@ -138,6 +138,7 @@ img:hover {
 
 .top_pelikulak {
 
+    border-top: dotted white 1px;
     color: #ffffff;
     font-family: Nanito Sans, sans-serif;
 }
@@ -153,15 +154,15 @@ img:hover {
 
     display: flex;
     justify-content: center;
-
-    margin-top: 10px;
+    margin-top: 50px;
+    
 
 
 
 }
 
 
-.pelikula_lista>.pelikula_img>img {
+.pelikula_lista>.pelikula>img {
 
     width: 200px;
     height: 300px;
@@ -172,8 +173,26 @@ img:hover {
 
 }
 
-.pelikula_lista>.pelikula_textua {
-   margin: 10px;
-    font-family: Arial, sans-serif;
 
+
+.pelikula_lista>.pelikula>.pelikula_textua>h2 {
+
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pelikula_guztiak {
+    
+    border-top: dotted #ffffff 1px;
+    margin-top: 150px;
+    font-family: Nanito Sans, sans-serif;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.pelikula_guztiak>.titulua {
+     margin-top: 40px;
+    text-align: center;
 }
