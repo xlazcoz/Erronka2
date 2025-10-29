@@ -11,6 +11,12 @@ header {
     padding: 0px;
 }
 
+footer{
+
+    background-color: #2d2749;
+    margin: 0px;
+    padding: 10px;
+}
 nav>ul {
     display: flex;
     list-style-type: none;
