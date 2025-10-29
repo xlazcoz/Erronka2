@@ -13,34 +13,54 @@
 <body>
 
     <header>
-        <div id="goikomenua">
+        
             <nav>
-
-                <img class="logoa" src="img/logoa.png" alt="ZinemaUsurbil logoa" class="logo">
+                <div class="logo">
+                <img src="img/logoa.png" alt="ZinemaUsurbil logoa" class="logo">
+                </div>
             <details>
                 <summary></summary>
                 <ul class="menua">
                     <li><a href="index.html">HASIERA</a></li>
-                    <li><a href="pelikulak.html">PELIKULAK</a></li>
-                    <li><a href="saskia.html">SASKIA</a></li>
-                    <li><a href="kontaktua.html">KONTAKTUA</a></li>
-                    <li> <a href="login.html">LOGIN</a></li>
+                    <li><a href="#">PELIKULAK</a></li>
+                    <li><a href="#">SASKIA</a></li>
+                    <li><a href="#">KONTAKTUA</a></li>
+                    <li> <a href="#">LOGIN</a></li>
                 </ul>
                 </details>
             </nav>
 
-        </div>
-
     </header>
 
     <main>
-
-
-
-
+    
+         <div class="carrusel-contenedor">
+            
+            <div class="imagen-principal">
+                <a href="https://www.youtube.com/watch?v=XZIkmRhRDEc" target="_blank">
+                <img id="imagenCarrusel" src="img/Mas-Palomas-horizontal.jpg" alt="Película actual" width="1000" height="500">
+                </a>
+            </div>
 
         
+            <div class="botones">
+                
+                <button onclick="document.getElementById('imagenCarrusel').src='img/Mas-Palomas-horizontal.jpg'; document.getElementById('enlaceTrailer').href='https://www.youtube.com/watch?v=XZIkmRhRDEc'">&#8203;</button>
+               
+                
+                <button onclick="document.getElementById('imagenCarrusel').src='img/black-phone-horizontal.jpg'; document.getElementById('enlaceTrailer').href='https://www.youtube.com/watch?v=vbjRY7KeZe0'">&#8203;</button>
+                
+               
+                <button onclick="document.getElementById('imagenCarrusel').src='img/predator-badlans-horizontal.png'; document.getElementById('tituloPelicula').href='https://www.youtube.com/watch?v=PWyWDrP5n-M'">&#8203;</button>
+                
+                
+                <button onclick="document.getElementById('imagenCarrusel').src='img/Springsteen-horizontal.png'; document.getElementById('tituloPelicula').href='https://www.youtube.com/watch?v=oQXdM3J33No'">&#8203;</button>
+                
+            </div>
+
     </main>
+
+
 
     <footer class="footer1">
 
@@ -63,17 +83,17 @@
       </div>
       <ul class="menua2">
           <li><a href="index.html">Orrialde nagusia</a></li>
-          <li><a href="kartelera.html">Kartelera</a></li>
-          <li><a href="informazioa.html">Informazioa</a></li>
-          <li><a href="balorazioak.html">Balorazioak</a></li>
-          <li><a href="saskia.html">Saskia</a></li>
+          <li><a href="#">Kartelera</a></li>
+          <li><a href="#">Informazioa</a></li>
+          <li><a href="#">Balorazioak</a></li>
+          <li><a href="#">Saskia</a></li>
         </ul>
     </footer>
   
   <footer class="footer2">
     <div class="logo">
         <a href="index.html">
-          <img src="img/logoa.png" alt=" Urbil logo" width="40" height="40" />
+          <img src="img/logoa.png" alt=" Urbil logo" />
           <h2>Zinema Usurbil</h2>
         </a>
       </div>
@@ -85,6 +105,7 @@
         <li><a href="https://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></li>
     </ul>
       </div>
-  </footer>
+  
+
 </body>
 </html>
