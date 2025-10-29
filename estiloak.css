@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3e3666;
@@ -49,14 +50,15 @@ summary::before {
 }
 
 details[open] summary::before {
-    content: '\2715'; 
+    content: '\2715';
 }
 
 details[open] summary {
     background-color: #2d2749;
 }
+
 details[open] summary:hover {
-    background-color: #3e3666;
+    background-color: #5b3666;
 }
 
 .menua {
@@ -66,8 +68,8 @@ details[open] summary:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 40%; 
-    margin-top: -25px; 
+    top: 50%;
+    margin-top: -25px;
     border: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -76,7 +78,7 @@ details[open] summary:hover {
 .menua li {
     list-style: none;
     display: inline-block;
-    margin: 0 5px; 
+    margin: 0 5px;
 }
 
 .menua li a {
@@ -91,14 +93,40 @@ details[open] summary:hover {
 }
 
 .menua li a:hover {
-    color: #3e3666;
-    background: #d6d915;
+    color: #8a7ec7;
+    background: #3e3666;
+    ;
 }
 
 
 
 summary:hover {
     background-color: #3e3666;
+}
+
+.PribatutasunPolitika {
+    color: white;
+}
+
+.CookiePolitika {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #2d2749;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer>a {
+    text-decoration: none;
+    color: white;
 }
 
 img:hover {
@@ -235,4 +263,64 @@ img:hover {
 
 .logo img:hover {
     transform: scale(1.05);
+}
+.top_pelikulak {
+
+    border-top: dotted white 1px;
+    color: #ffffff;
+    font-family: Nanito Sans, sans-serif;
+}
+
+.top_pelikulak>.titulua {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.pelikula_lista {
+
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+
+
+}
+
+
+.pelikula_lista>.pelikula>img {
+
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: transform 0.3s;
+    float: left;
+
+}
+
+
+
+.pelikula_lista>.pelikula>.pelikula_textua>h2 {
+
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pelikula_guztiak {
+    
+    border-top: dotted #ffffff 1px;
+    margin-top: 150px;
+    font-family: Nanito Sans, sans-serif;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.pelikula_guztiak>.titulua {
+     margin-top: 40px;
+    text-align: center;
 }
