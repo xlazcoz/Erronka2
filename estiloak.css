@@ -46,7 +46,12 @@ nav>ul>li {
 
 
 }
-
+.PribatutasunPolitika{
+    color:white;
+}
+.CookiePolitika{
+    color:white;
+}
 footer {
   position: fixed;
   bottom: 0;
