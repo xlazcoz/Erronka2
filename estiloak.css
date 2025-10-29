@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 body {
     background-color: #3e3666;
 
@@ -59,8 +62,8 @@ details[open] summary {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50%; /* Cambiado de top: 100% a 50% */
-    margin-top: -25px; /* Ajusta para centrar verticalmente */
+    top: 50%; 
+    margin-top: -25px; 
     z-index: 1000;
     min-width: max-content;
     border: none;
@@ -73,7 +76,7 @@ details[open] summary {
 .menua li {
     list-style: none;
     display: inline-block;
-    margin: 0 5px; /* Espacio entre items */
+    margin: 0 5px; 
 }
 
 .menua li a {
@@ -88,8 +91,8 @@ details[open] summary {
 }
 
 .menua li a:hover {
-    color: #00ff2f;
-    background: rgb(191, 38, 237);
+    color: #a575a5;
+    background: #3e3666;;
 }
 
 .logoa {
