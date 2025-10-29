@@ -96,7 +96,7 @@ details[open] summary:hover {
 }
 
 .logoa {
-    width: 130px;
+    width: 100px;
     border-radius: 50px;
 }
 
@@ -104,27 +104,98 @@ summary:hover {
     background-color: #3e3666;
 }
 
-.PribatutasunPolitika{
-    color:white;
-}
-.CookiePolitika{
-    color:white;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #2d2749;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-footer>a{
-    text-decoration: none;
-    color:white;
-}
 img:hover {
     transform: scale(1.10);
+}
+
+
+
+
+
+.footer1 {
+    background: #2d2749;
+    border-top: 2px solid #935995;
+    color: #b0b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer1 a {
+    color: #b0b0b0;
+    text-decoration: none;
+    
+}
+
+.footer1 a:hover {
+    color: #8a7ec7;
+}
+
+.footer1 .informazioa ul,
+.footer1 .legal ul,
+.footer1 .menua2 li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer2 {
+    background: #2d2749;
+    border-top: 1px solid #935995;
+    color: #b0b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+.footer2 a {
+    color: #b0b0b0;
+    text-decoration: none;
+    
+}
+
+.footer2 a:hover {
+    color: #8a7ec7;
+}
+.logos ul {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.logos li {
+    display: flex; 
+    align-items: center;
+}
+
+.logos li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.logos li img:hover {
+    transform: scale(1.1);
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e0e0;
+    gap: 12px;
+}
+
+.logo img {
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
