@@ -1,6 +1,7 @@
-*{
+* {
     margin: 0;
 }
+
 body {
     background-color: #3e3666;
 
@@ -48,14 +49,15 @@ summary::before {
 }
 
 details[open] summary::before {
-    content: '\2715'; 
+    content: '\2715';
 }
 
 details[open] summary {
     background-color: #2d2749;
 }
+
 details[open] summary:hover {
-    background-color: #3e3666;
+    background-color: #5b3666;
 }
 
 
@@ -66,8 +68,8 @@ details[open] summary:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50%; 
-    margin-top: -25px; 
+    top: 50%;
+    margin-top: -25px;
     border: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -76,7 +78,7 @@ details[open] summary:hover {
 .menua li {
     list-style: none;
     display: inline-block;
-    margin: 0 5px; 
+    margin: 0 5px;
 }
 
 .menua li a {
@@ -92,7 +94,8 @@ details[open] summary:hover {
 
 .menua li a:hover {
     color: #8a7ec7;
-    background: #3e3666;;
+    background: #3e3666;
+    ;
 }
 
 .logoa {
@@ -104,27 +107,73 @@ summary:hover {
     background-color: #3e3666;
 }
 
-.PribatutasunPolitika{
-    color:white;
+.PribatutasunPolitika {
+    color: white;
 }
-.CookiePolitika{
-    color:white;
+
+.CookiePolitika {
+    color: white;
 }
+
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #2d2749;
-  padding-bottom: 20px;
-  padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #2d2749;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
-footer>a{
+
+footer>a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
+
 img:hover {
     transform: scale(1.10);
+}
+
+.top_pelikulak {
+
+    color: #ffffff;
+    font-family: Nanito Sans, sans-serif;
+}
+
+.top_pelikulak>.titulua {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.pelikula_lista {
+
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+
+
+
+}
+
+
+.pelikula_lista>.pelikula_img>img {
+
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: transform 0.3s;
+    float: left;
+
+}
+
+.pelikula_lista>.pelikula_textua {
+   margin: 10px;
+    font-family: Arial, sans-serif;
+
 }
