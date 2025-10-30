@@ -99,59 +99,6 @@ details[open] summary:hover {
 }
 
 
-
-summary:hover {
-    background-color: #3e3666;
-}
-
-img:hover {
-    transform: scale(1.10);
-}
-
-
-.carrusel-contenedor {
-    position: relative;
-    max-width: 1000px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-
-.imagen-principal img {
-    width: 100%;
-    max-width: 1000px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 1);
-    transition: all 1s;
-    margin-top: 30px;
-}
-
-
-.botones {
-    margin-top: 30px;
-}
-
-
-.botones button {
-    background: #2d2749;
-    color: #d6d915;
-    border: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 1s;
-}
-
-.botones button:hover {
-    background: #d6d915;
-    color: #2d2749;
-    transform: scale(1.1);
-}
-
 .footer1 {
     background: #2d2749;
     border-top: 2px solid #d6d915;
