@@ -101,7 +101,7 @@ details[open] summary:hover {
 
 .footer1 {
     background: #2d2749;
-    border-top: 2px solid #d6d915;
+    border-top: 2px solid #ffffff;
     color: #b0b0b0;
     display: flex;
     justify-content: space-between;
@@ -130,7 +130,7 @@ details[open] summary:hover {
 
 .footer2 {
     background: #2d2749;
-    border-top: 1px solid #d6d915;
+    border-top: 1px solid #ffffff;
     color: #b0b0b0;
     display: flex;
     justify-content: space-between;
