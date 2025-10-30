@@ -184,7 +184,7 @@ details[open] summary:hover {
 }
 
 .logo img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 
@@ -243,7 +243,9 @@ details[open] summary:hover {
     color: #ffffff;
     margin-bottom: 50px;
 }
-
+.pelikula img:hover{
+    transform: scale(1.1);
+}
 .pelikula_guztiak>.titulua {
      margin-top: 40px;
     text-align: center;
