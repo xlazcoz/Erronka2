@@ -186,73 +186,43 @@ details[open] summary:hover {
 .logo img:hover {
     transform: scale(1.1);
 }
-
-
-.top_pelikulak {
-
-    border-top: dotted white 1px;
-    color: #ffffff;
-    font-family: Nanito Sans, sans-serif;
-}
-
-.top_pelikulak>.titulua {
-    text-align: center;
-    margin-top: 40px;
+.botoia {
+    position: relative;
+    display: inline-block;
 
 }
-
-.pelikula_lista {
-
-
+#play-botoia{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+video{
+    display:none;
+}
+.deskripzioa>h2{
+color:white;
+}
+.deskripzioa>h3{
+    color:grey
+}
+p{
+    color:white;
+}
+main {
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    
-
-
-
 }
-
-
-.pelikula_lista>.pelikula>img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-    margin: 20px;
-    transition: transform 0.3s;
+.botoia {
+   position: relative;
+    display: inline-block;
     float: left;
+    margin-right: 40px;
 }
-
-
-
-
-.pelikula_lista>.pelikula>.pelikula_textua>h2 {
-
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-bottom: 50px;
+.orrialdea{
+    margin-top: 30px;
+    margin-left:30px;
+    margin-right:30px;
 }
-
-.pelikula_guztiak {
-    
-    border-top: dotted #ffffff 1px;
-    margin-top: 150px;
-    font-family: Nanito Sans, sans-serif;
-    color: #ffffff;
-    margin-bottom: 50px;
+.erosi-botoia{
+    padding-left: 100px;
 }
-.pelikula img:hover{
-    transform: scale(1.1);
-}
-.pelikula_guztiak>.titulua {
-     margin-top: 40px;
-    text-align: center;
-}
-
-.muñeka{
-    width:88%;
-    text-align: center;
-}
-
-
