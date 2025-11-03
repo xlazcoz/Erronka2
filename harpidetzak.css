@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3e3666;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2d2749;
+    margin: 0 auto;
+    padding: 15px 30px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+details {
+    position: static;
+}
+
+summary {
+    background-color: #2d2749;
+    list-style: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: all 1s ease;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '\2630';
+    font-size: 30px;
+}
+
+details[open] summary::before {
+    content: '\2715';
+}
+
+details[open] summary {
+    background-color: #2d2749;
+}
+
+details[open] summary:hover {
+    background-color: #5b3666;
+}
+
+.menua {
+    background-color: #2d2749;
+    padding: 15px 0px;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    margin-top: -25px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.menua li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.menua li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 8px 16px;
+    display: block;
+    transition: all 1s ease;
+    font-size: 20px;
+}
+
+.menua li a:hover {
+    color: #2d2749;
+    background: #d6d915;
+    ;
+}
+
+#goiko_argazki {
+
+    display: flex;
+    justify-content: center;
+
+    width: 800px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.text {
+
+    color: #ffffff;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    text-shadow: 3px 5px 5px #8838e4;
+    ;
+    margin-bottom: 60px;
+
+
+}
+
+.goiko_text {
+
+    text-align: center;
+    color: #ffffff;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #ffffff;
+
+
+}
+
+.blokea {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 500px;
+
+}
+
+.blokea img {
+
+    width: 300px;
+    border-radius: 50px;
+    transition: transform 0.5s ease;
+
+}
+
+.blokea img:hover {
+
+    transform: scale(1.1);
+
+}
+
+.blokea h3 {
+
+    text-shadow: 3px 5px 5px #4043f3;
+}
+
+.blokea p{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+
+.footer1 {
+    background: #2d2749;
+    border-top: 2px solid #ffffff;
+    color: #b0b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 90px;
+}
+
+.footer1 a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.footer1 a:hover {
+    color: #d6d915;
+}
+
+.footer1 .informazioa ul,
+.footer1 .legal ul,
+.footer1 .menua2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer2 {
+    background: #2d2749;
+    border-top: 1px solid #ffffff;
+    color: #b0b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer2 a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.footer2 a:hover {
+    color: #d6d915;
+}
+
+.logos ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logos li {
+    display: flex;
+    align-items: center;
+}
+
+.logos li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 1s ease;
+}
+
+.logos li img:hover {
+    transform: scale(1.1);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e0e0;
+    gap: 12px;
+}
+
+.logo img {
+    border-radius: 50px;
+    transition: transform 1s ease;
+    width: 80px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
