@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    
+
 }
 
 body {
@@ -98,6 +98,83 @@ details[open] summary:hover {
     ;
 }
 
+#sarrerak_container {
+
+    border-top: solid rgb(229, 228, 233);
+
+
+}
+
+.sarrerak_titulua {
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: solid #d6d915 1px;
+    text-shadow: 3px 5px 10px #d6d915;
+
+}
+
+.sarrera_motak {
+
+    border-top: solid 1px white;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.sarrera_motak,
+.mota_text,
+.sarrera_prezioa {
+
+    color: #ffffff;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.sarrera_prezioa {
+
+    font-weight: bold;
+    margin-left: 100px;
+
+}
+
+.sarrera_botoiak {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+
+.sarrera_botoiak h4{
+
+    padding: 10px;
+}
+
+button {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+
+}
+
+
+
+
+
 
 .footer1 {
     background: #2d2749;
@@ -149,13 +226,13 @@ details[open] summary:hover {
 
 .logos ul {
     list-style: none;
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
 .logos li {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -187,73 +264,8 @@ details[open] summary:hover {
     transform: scale(1.1);
 }
 
-
-.top_pelikulak {
-
-    border-top: dotted white 1px;
-    color: #ffffff;
-    font-family: Nanito Sans, sans-serif;
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
-.titulua {
-    text-align: center;
-    margin-top: 40px;
-    text-shadow: 3px 5px 10px #db0cf7;
-
-}
-
-.pelikula_lista {
-
-
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    
-
-
-
-}
-
-
-.pelikula_lista>.pelikula>img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-    margin: 20px;
-    transition: transform 0.3s;
-    float: left;
-}
-
-
-
-
-.pelikula_lista>.pelikula>.pelikula_textua>h2 {
-
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-bottom: 50px;
-    text-shadow: 3px 5px 10px rgb(19, 243, 168);
-}
-
-.pelikula_guztiak {
-    
-    border-top: dotted #ffffff 1px;
-    margin-top: 150px;
-    font-family: Nanito Sans, sans-serif;
-    color: #ffffff;
-    margin-bottom: 50px;
-}
-.pelikula img:hover{
-    transform: scale(1.1);
-}
-
-
-.muñeka{
-    width:88%;
-    text-align: center;
-    text-shadow: 3px 5px 10px rgb(19, 243, 168);
-
-}
-
-
