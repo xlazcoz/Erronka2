@@ -254,5 +254,21 @@ details[open] summary:hover {
     width:88%;
     text-align: center;
 }
+.pelikula-link {
+    display: inline-block;      
+    text-decoration: none;      
+    color: inherit;             
+}
+
+.pelikula-link img {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+.pelikula-link img:hover {
+    transform: scale(1.1);
+}
 
 

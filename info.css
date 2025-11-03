@@ -199,6 +199,7 @@ details[open] summary:hover {
 }
 video{
     display:none;
+    width:800px;
 }
 .deskripzioa>h2{
 color:white;
@@ -225,4 +226,7 @@ main {
 }
 .erosi-botoia{
     padding-left: 100px;
+}
+img{
+    width:250px;
 }
