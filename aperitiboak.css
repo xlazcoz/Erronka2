@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    
+
 }
 
 body {
@@ -100,6 +100,42 @@ details[open] summary:hover {
 }
 
 
+
+.goiko_titulu h1{
+
+    color: white;
+    font-family:"Kanit", sans-serif;
+    text-shadow: 3px 5px 10px #d6d915;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#aperitiboimg_box{
+
+    width: 800px;
+    height: 600px;
+    background-color: #5b3666;
+    border: solid 1px #e0e0e0;
+    border-radius: 50px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+ 
+}
+
+#aperitiboimg_box img{
+
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    
+}
+
+
 .footer1 {
     background: #2d2749;
     border-top: 2px solid #ffffff;
@@ -150,13 +186,13 @@ details[open] summary:hover {
 
 .logos ul {
     list-style: none;
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
 .logos li {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -188,89 +224,8 @@ details[open] summary:hover {
     transform: scale(1.1);
 }
 
-
-.top_pelikulak {
-
-    border-top: dotted white 1px;
-    color: #ffffff;
-    font-family: Nanito Sans, sans-serif;
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
-.titulua {
-    text-align: center;
-    margin-top: 40px;
-    text-shadow: 3px 5px 10px #db0cf7;
-
-}
-
-.pelikula_lista {
-
-
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    
-
-
-
-}
-
-
-.pelikula_lista>.pelikula>img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-    margin: 20px;
-    transition: transform 0.3s;
-    float: left;
-}
-
-
-
-
-.pelikula_lista>.pelikula>.pelikula_textua>h2 {
-
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-bottom: 50px;
-    text-shadow: 3px 5px 10px rgb(19, 243, 168);
-}
-
-.pelikula_guztiak {
-    
-    border-top: dotted #ffffff 1px;
-    margin-top: 150px;
-    font-family: Nanito Sans, sans-serif;
-    color: #ffffff;
-    margin-bottom: 50px;
-}
-.pelikula img:hover{
-    transform: scale(1.1);
-}
-
-
-.muñeka{
-    width:88%;
-    text-align: center;
-    text-shadow: 3px 5px 10px rgb(19, 243, 168);
-
-}
-.pelikula-link {
-    display: inline-block;      
-    text-decoration: none;      
-    color: inherit;             
-}
-
-.pelikula-link img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-    margin: 20px;
-    transition: transform 0.3s;
-}
-.pelikula-link img:hover {
-    transform: scale(1.1);
-}
-
-

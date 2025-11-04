@@ -14,6 +14,7 @@ header {
     margin: 0 auto;
     padding: 15px 30px;
     position: relative;
+    border-bottom: 1px solid #ffffff;
 }
 
 nav {
