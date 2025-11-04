@@ -62,9 +62,9 @@
 
                 <div class="sarrera_botoiak">
 
-                    <button>-</button>
-                    <h4>0</h4>
-                    <button>+</button>
+                    <button class="resta">-</button>
+                    <h4 class="total">0</h4>
+                    <button class="suma">+</button>
 
                 </div>
 
@@ -83,9 +83,9 @@
 
                 <div class="sarrera_botoiak">
 
-                    <button>-</button>
-                    <h4>0</h4>
-                    <button>+</button>
+                    <button class="resta">-</button>
+                    <h4 class="total">0</h4>
+                    <button class="suma">+</button>
 
                 </div>
 
@@ -101,9 +101,10 @@
 
 
                 <div class="sarrera_botoiak">
-                    <button>-</button>
-                    <h4>0</h4>
-                    <button>+</button>
+                    <button class="resta">-</button>
+                    <h4 class="total">0</h4>
+                    <button class="suma">+</button>
+                    
 
                 </div>
             </article>
@@ -148,12 +149,12 @@
                 </ul>
             </div>
             <ul class="menua2">
-                <li><a href="../index.html">HASIERA</a></li>
-                <li><a href="../pelikulak.html">PELIKULAK</a></li>
-                <li><a href="../saskia.html">SASKIA</a></li>
-                <li><a href="../harpidetzak.html">HARPIDETZAK</a></li>
-                <li> <a href="../aperitiboak.html">APERITIBOAK</a></li>
-            </ul>
+            <li><a href="../index.html">Orrialde nagusia</a></li>
+            <li><a href="../pelikulak.html">Pelikulak</a></li>
+            <li><a href="../saskia.html">Saskia</a></li>
+            <li><a href="../harpidetzak.html">Harpidetzak</a></li>
+            <li><a href="../aperitiboak.html">Aperitiboak</a></li>
+        </ul>
         </footer>
 
         <footer class="footer2">
@@ -174,8 +175,31 @@
                     </li>
                 </ul>
             </div>
-
+        </footer>
     </div>
+    <script>
+        const sarrera_botoiak = document.querySelectorAll(".sarrera_botoiak");
+
+        sarrera_botoiak.forEach((counter) => {
+            const sumaButton = counter.querySelector(".suma");
+            const restaButton = counter.querySelector(".resta");
+            const totalElement = counter.querySelector(".total");
+
+            let total_int = parseInt(totalElement.textContent);
+
+            sumaButton.addEventListener("click", () => {
+                total_int = total_int < 10 ? total_int + 1 : 10;
+                totalElement.textContent = total_int;
+            });
+
+            restaButton.addEventListener("click", () => {
+                total_int = total_int > 0 ? total_int - 1 : 0;
+                totalElement.textContent = total_int;
+            });
+        });
+
+        
+    </script>
 </body>
 
 </html>
