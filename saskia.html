@@ -188,16 +188,16 @@
             let total_int = parseInt(totalElement.textContent);
 
             sumaButton.addEventListener("click", () => {
-                total_int++;
+                total_int = total_int < 10 ? total_int + 1 : 10;
                 totalElement.textContent = total_int;
             });
 
             restaButton.addEventListener("click", () => {
-                total_int = total_int > 0? total_int - 1 : 0;
+                total_int = total_int > 0 ? total_int - 1 : 0;
                 totalElement.textContent = total_int;
             });
-            
         });
+
         
     </script>
 </body>
