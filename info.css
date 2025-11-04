@@ -98,6 +98,105 @@ details[open] summary:hover {
     ;
 }
 
+#play-botoia {
+    cursor: pointer;
+    background: yellow;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+#play-botoia:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px yellow;
+}
+
+
+.erosi-botoia button {
+    background: yellow;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+
+.erosi-botoia button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px yellow;
+    
+}
+
+.erosi-botoia {
+    text-align: center;
+    margin: 30px;
+
+}
+
+
+.botoia img {
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    width: 250px;
+}
+
+.botoia img:hover {
+    transform: scale(1.05);
+}
+
+video {
+    display: none;
+    width: 800px;
+    border-radius: 15px;
+
+}
+
+.deskripzioa h2 {
+    color: yellow;
+}
+
+.deskripzioa h3 {
+    color: #e6e65a ;
+}
+
+p {
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
+.botoia {
+    float: left;
+    margin-right: 40px;
+}
+
+.orrialdea {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
 
 .footer1 {
     background: #2d2749;
@@ -187,63 +286,7 @@ details[open] summary:hover {
     transform: scale(1.1);
 }
 
-.botoia {
-    position: relative;
-    display: inline-block;
 
-}
 
-#play-botoia {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-}
 
-video {
-    display: none;
-    width: 800px;
-}
 
-.deskripzioa>h2 {
-    color: white;
-}
-
-.deskripzioa>h3 {
-    color: grey
-}
-
-p {
-    color: white;
-}
-
-main {
-    display: flex;
-}
-
-.botoia {
-    position: relative;
-    display: inline-block;
-    float: left;
-    margin-right: 40px;
-}
-
-.orrialdea {
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.erosi-botoia {
-    padding-left: 100px;
-}
-
-img {
-    width: 250px;
-}
-
-.botoia img{
-
-   border-radius: 10px; 
-  
-}
