@@ -215,6 +215,32 @@ button {
 
 }
 
+.erosi-botoia button {
+    background: yellow;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.erosi-botoia button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 20px yellow;
+
+}
+
+.erosi-botoia {
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer1 {
     background: #2d2749;
     border-top: 2px solid #ffffff;
@@ -301,10 +327,4 @@ button {
 
 .logo img:hover {
     transform: scale(1.1);
-}
-
-.kanit-regular {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
