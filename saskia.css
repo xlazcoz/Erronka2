@@ -98,23 +98,14 @@ details[open] summary:hover {
     ;
 }
 
-#sarrerak_container {
-
-    border-top: solid rgb(229, 228, 233);
-
-
-}
-
 .sarrerak_titulua {
-    margin-top: 30px;
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 100px;
+    
+    margin:40px ;
     font-family: "Kanit", sans-serif;
     text-align: center;
     color: #ffffff;
     border-bottom: solid #d6d915 1px;
-    text-shadow: 3px 5px 10px #d6d915;
+    text-shadow: 2px 5px 10px #d6d915;
 
 }
 
@@ -140,21 +131,73 @@ details[open] summary:hover {
 
 }
 
+#sarrerak_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 2px solid #8a7ec7;
+}
+
+
+
+
+
+.sarrera_motak {
+    border: 1px solid #8a7ec7;
+    margin: 20px 0;
+    background:#38315c; 
+    border-radius: 12px;  
+}
+
+
+
+
+
+.mota_text h3 {
+    color: #ffffff;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 150px; 
+}
+
+
 .sarrera_prezioa {
-
     font-weight: bold;
-    margin-left: 100px;
+    color: #ffffff;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
 
+
+.sarrera_botoiak {
+    gap: 15px;
+}
+
+.sarrera_botoiak button {
+    background-color: #2d2749;
+    color: #d6d915;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.sarrera_botoiak button:hover {
+    background-color: #d6d915;
+    color: #2d2749;
+    transform: scale(1.1);
+}
+
+
+.sarrera_botoiak h4 {
+    min-width: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 .sarrera_botoiak {
-
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
-
 }
 
 .sarrera_botoiak h4{
@@ -170,11 +213,6 @@ button {
     border-style: none;
 
 }
-
-
-
-
-
 
 .footer1 {
     background: #2d2749;
