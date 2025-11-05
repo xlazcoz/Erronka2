@@ -274,6 +274,49 @@
 
 
             </section>
+<div class="contenedor">
+    <button class="boton" onclick="mostrarProximas()">
+        PELIKULA GEHIAGO IKUSI
+    </button>
+    
+    <div id="proximas" class="seccion" style="display: none;">
+        <div class="texto">Laster filma gehiago </div>
+        
+        <progress id="barraProgreso" value="0" max="100"></progress>
+    </div>
+</div>
+        <script>
+let intervalo;
+
+function mostrarProximas() {
+
+    document.querySelector('.boton').style.display = 'none';
+    document.getElementById('proximas').style.display = 'block';
+    iniciarBarra();
+}
+
+function iniciarBarra() {
+    const barra = document.getElementById('barraProgreso');
+    let progreso = 0;
+    let subiendo = true;
+    
+    intervalo = setInterval(function() {
+        if (subiendo) {
+            progreso += 2;
+            if (progreso >= 100) {
+                progreso = 100;
+                subiendo = false;
+            }
+        } else {
+            progreso = 0;
+            subiendo = true;
+        }
+        
+        barra.value = progreso;
+        
+    }, 50);
+}
+</script>
 
         </div>
 
