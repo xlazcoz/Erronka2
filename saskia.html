@@ -204,7 +204,20 @@
         });
 
     </script>
+    <script>
+        
+            const erosiButton = document.querySelector(".erosi");
 
+        erosiButton.addEventListener("click", () => {   
+
+        sarrera_botoiak.forEach((counter) => {
+            const totalElement = counter.querySelector(".total");
+                totalElement.textContent = "0";
+        });
+
+        alert('Exito bidez egin da erosketa');
+        });
+    </script>
 
 </body>
 
