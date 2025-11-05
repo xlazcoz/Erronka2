@@ -206,17 +206,35 @@
     </script>
     <script>
         
-            const erosiButton = document.querySelector(".erosi");
 
-        erosiButton.addEventListener("click", () => {   
 
-        sarrera_botoiak.forEach((counter) => {
-            const totalElement = counter.querySelector(".total");
-                totalElement.textContent = "0";
-        });
+const erosiButton = document.querySelector(".erosi");
 
-        alert('Exito bidez egin da erosketa');
-        });
+erosiButton.addEventListener("click", () => {
+
+    sarrera_botoiak.forEach((counter) => {
+        const totalElement = counter.querySelector(".total");
+        totalElement.textContent = "0";
+    });
+
+     const dialog = document.createElement('dialog');
+    dialog.innerHTML = `
+        <h3>Erosketa eginda!</h3>
+        `;
+    document.body.appendChild(dialog);
+    dialog.showModal();
+    
+
+    setTimeout(() => {
+        dialog.close();
+    }, 1500);
+    
+    // Quitar el dialog después de cerrar
+    dialog.addEventListener('close', function() {
+        dialog.remove();
+    });
+
+});
     </script>
 
 </body>

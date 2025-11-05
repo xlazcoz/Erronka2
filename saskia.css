@@ -328,3 +328,24 @@ button {
 .logo img:hover {
     transform: scale(1.1);
 }
+
+
+
+dialog {
+    top: 20px;
+    right: 20px;
+    left: auto;
+    border-radius: 10px;
+    background: yellow;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 200px;
+    border: none;
+}
+
+
+dialog h3 {
+    background: yellow;
+    color: #2d2749;
+
+
+}
