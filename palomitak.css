@@ -309,7 +309,7 @@ button {
     font-weight: 400;
     font-style: normal;
 }
-img{
+img:not(.logo img){
     width:75px;
     height:120px;
     border-radius: 10px;
@@ -318,4 +318,5 @@ img{
     justify-content: space-around;
     display: flex;
 }
+
 
