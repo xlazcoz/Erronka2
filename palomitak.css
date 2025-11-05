@@ -1,12 +1,12 @@
 * {
     margin: 0;
-
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3e3666;
     line-height: 1.6;
+    color: #ffffff;
 }
 
 header {
@@ -96,81 +96,71 @@ details[open] summary:hover {
 .menua li a:hover {
     color: #2d2749;
     background: #d6d915;
-    ;
 }
 
+
+#sarrerak_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
 .sarrerak_titulua {
-    
-    margin:40px ;
+    margin: 40px 0;
     font-family: "Kanit", sans-serif;
     text-align: center;
     color: #ffffff;
     border-bottom: solid #d6d915 1px;
     text-shadow: 2px 5px 10px #d6d915;
-
 }
-
-.sarrera_motak {
-
-    border-top: solid 1px white;
-    margin-left: 250px;
-    margin-right: 250px;
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-between;
-
-
-}
-
-.sarrera_motak,
-.mota_text,
-.sarrera_prezioa {
-
-    color: #ffffff;
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-#sarrerak_container {
-    max-width: 1000px;
-    margin: 0 auto;
-    
-}
-
-
-
 
 
 .sarrera_motak {
     border: 1px solid #8a7ec7;
     margin: 20px 0;
-    background:#38315c; 
-    border-radius: 12px;  
+    background: #38315c;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 
 
 
+.mota_text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+}
 
 .mota_text h3 {
     color: #ffffff;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    min-width: 150px; 
-    margin-top: 45px;
+    font-size: 1.2em;
 }
 
-
+/* Precio */
 .sarrera_prezioa {
     font-weight: bold;
     color: #ffffff;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    min-width: 100px;
+    font-size: 1.1em;
 }
 
-
+/* Controles de cantidad */
 .sarrera_botoiak {
+    display: flex;
+    align-items: center;
     gap: 15px;
+    min-width: 150px;
+    justify-content: center;
 }
 
 .sarrera_botoiak button {
@@ -180,6 +170,11 @@ details[open] summary:hover {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -190,32 +185,83 @@ details[open] summary:hover {
     transform: scale(1.1);
 }
 
-
 .sarrera_botoiak h4 {
     min-width: 30px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-}
-
-.sarrera_botoiak {
-    display: flex;
-}
-
-.sarrera_botoiak h4{
-
     padding: 10px;
+    margin: 0;
 }
 
-button {
-
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border-style: none;
-
+/* Imágenes de palomitas */
+img:not(.logo img, .logos img) {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
+/* Botón de compra */
+.erosi-botoia {
+    text-align: center;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.erosi-botoia button {
+    background: #d6d915;
+    color: #2d2749;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.erosi-botoia button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(214, 217, 21, 0.6);
+}
+
+/* Dialog de notificación */
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: #d6d915;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: 250px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog h3 {
+    background: #d6d915;
+    color: #2d2749;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.3em;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+/* Footer */
 .footer1 {
     background: #2d2749;
     border-top: 2px solid #ffffff;
@@ -303,73 +349,3 @@ button {
 .logo img:hover {
     transform: scale(1.1);
 }
-
-.kanit-regular {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-img:not(.logo img, .logos img){
-    width:75px;
-    height:120px;
-    border-radius: 10px;
-}
-.mota_text{
-    justify-content: space-around;
-    display: flex;
-}
-
-dialog {
-    top: 25px;
-    right: 20px;
-    margin-left: 670px;
-    border-radius: 10px;
-    background: yellow;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    max-width: 200px;
-    border: none;
-}
-
-
-dialog h3 {
-    background: yellow;
-    color: #2d2749;
-
-
-}
-button {
-
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border-style: none;
-
-}
-
-.erosi-botoia button {
-    background: yellow;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 50px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 200px;
-}
-
-.erosi-botoia button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 3px 20px yellow;
-
-}
-
-.erosi-botoia {
-    text-align: center;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
