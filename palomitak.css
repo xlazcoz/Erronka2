@@ -319,4 +319,57 @@ img:not(.logo img, .logos img){
     display: flex;
 }
 
+dialog {
+    top: 25px;
+    right: 20px;
+    margin-left: 670px;
+    border-radius: 10px;
+    background: yellow;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 200px;
+    border: none;
+}
+
+
+dialog h3 {
+    background: yellow;
+    color: #2d2749;
+
+
+}
+button {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+
+}
+
+.erosi-botoia button {
+    background: yellow;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.erosi-botoia button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 20px yellow;
+
+}
+
+.erosi-botoia {
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 

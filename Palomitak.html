@@ -62,10 +62,10 @@
                 </div>
 
                 <div class="sarrera_botoiak">
-
-                    <button>-</button>
-                    <h4>0</h4>
-                    <button>+</button>
+                    <button class="resta">-</button>
+                    <h4 class="total">0</h4>
+                    <button class="suma">+</button>
+                    
 
                 </div>
 
@@ -84,10 +84,10 @@
 
 
                 <div class="sarrera_botoiak">
-
-                    <button>-</button>
-                    <h4>0</h4>
-                    <button>+</button>
+                    <button class="resta">-</button>
+                    <h4 class="total">0</h4>
+                    <button class="suma">+</button>
+                    
 
                 </div>
 
@@ -105,11 +105,19 @@
 
 
                 <div class="sarrera_botoiak">
-                    <button>-</button>
-                    <h4>0</h4>
-                    <button>+</button>
+                    <button class="resta">-</button>
+                    <h4 class="total">0</h4>
+                    <button class="suma">+</button>
+                    
 
                 </div>
+            </article>
+
+            
+            
+            <div class="erosi-botoia">
+                <button class="erosi">ORDAINDU</button>
+            </div>
             </article>
 
 
@@ -180,6 +188,50 @@
             </div>
 
     </div>
+    <script>
+    const sarrera_botoiak = document.querySelectorAll(".sarrera_botoiak");
+    
+    sarrera_botoiak.forEach((counter) => {
+        const sumaButton = counter.querySelector(".suma");
+        const restaButton = counter.querySelector(".resta");
+        const totalElement = counter.querySelector(".total");
+
+        counter.total_int = parseInt(totalElement.textContent);
+
+        sumaButton.addEventListener("click", () => {
+            counter.total_int = counter.total_int < 10 ? counter.total_int + 1 : 10;
+            totalElement.textContent = counter.total_int;
+        });
+
+        restaButton.addEventListener("click", () => {
+            counter.total_int = counter.total_int > 0 ? counter.total_int - 1 : 0;
+            totalElement.textContent = counter.total_int;
+        });
+    });
+
+    const erosiButton = document.querySelector(".erosi");
+
+    erosiButton.addEventListener("click", () => {
+        sarrera_botoiak.forEach((counter) => {
+            const totalElement = counter.querySelector(".total");
+            counter.total_int = 0;
+            totalElement.textContent = "0";
+        });
+
+        const dialog = document.createElement('dialog');
+        dialog.innerHTML = `<h3>Erosketa eginda!</h3>`;
+        document.body.appendChild(dialog);
+        dialog.showModal();
+        
+        setTimeout(() => {
+            dialog.close();
+        }, 1500);
+        
+        dialog.addEventListener('close', function() {
+            dialog.remove();
+        });
+    });
+</script>
 </body>
 
 </html>

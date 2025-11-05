@@ -183,59 +183,49 @@
         </footer>
     </div>
     <script>
-        const sarrera_botoiak = document.querySelectorAll(".sarrera_botoiak");
+    const sarrera_botoiak = document.querySelectorAll(".sarrera_botoiak");
+    
+    sarrera_botoiak.forEach((counter) => {
+        const sumaButton = counter.querySelector(".suma");
+        const restaButton = counter.querySelector(".resta");
+        const totalElement = counter.querySelector(".total");
 
-        sarrera_botoiak.forEach((counter) => {
-            const sumaButton = counter.querySelector(".suma");
-            const restaButton = counter.querySelector(".resta");
-            const totalElement = counter.querySelector(".total");
+        counter.total_int = parseInt(totalElement.textContent);
 
-            let total_int = parseInt(totalElement.textContent);
-
-            sumaButton.addEventListener("click", () => {
-                total_int = total_int < 10 ? total_int + 1 : 10;
-                totalElement.textContent = total_int;
-            });
-
-            restaButton.addEventListener("click", () => {
-                total_int = total_int > 0 ? total_int - 1 : 0;
-                totalElement.textContent = total_int;
-            });
+        sumaButton.addEventListener("click", () => {
+            counter.total_int = counter.total_int < 10 ? counter.total_int + 1 : 10;
+            totalElement.textContent = counter.total_int;
         });
 
-    </script>
-    <script>
+        restaButton.addEventListener("click", () => {
+            counter.total_int = counter.total_int > 0 ? counter.total_int - 1 : 0;
+            totalElement.textContent = counter.total_int;
+        });
+    });
+
+    const erosiButton = document.querySelector(".erosi");
+
+    erosiButton.addEventListener("click", () => {
+        sarrera_botoiak.forEach((counter) => {
+            const totalElement = counter.querySelector(".total");
+            counter.total_int = 0;
+            totalElement.textContent = "0";
+        });
+
+        const dialog = document.createElement('dialog');
+        dialog.innerHTML = `<h3>Erosketa eginda!</h3>`;
+        document.body.appendChild(dialog);
+        dialog.showModal();
         
-
-
-const erosiButton = document.querySelector(".erosi");
-
-erosiButton.addEventListener("click", () => {
-
-    sarrera_botoiak.forEach((counter) => {
-        const totalElement = counter.querySelector(".total");
-        totalElement.textContent = "0";
+        setTimeout(() => {
+            dialog.close();
+        }, 1500);
+        
+        dialog.addEventListener('close', function() {
+            dialog.remove();
+        });
     });
-
-     const dialog = document.createElement('dialog');
-    dialog.innerHTML = `
-        <h3>Erosketa eginda!</h3>
-        `;
-    document.body.appendChild(dialog);
-    dialog.showModal();
-    
-
-    setTimeout(() => {
-        dialog.close();
-    }, 1500);
-    
-    // Quitar el dialog después de cerrar
-    dialog.addEventListener('close', function() {
-        dialog.remove();
-    });
-
-});
-    </script>
+</script>
 
 </body>
 
