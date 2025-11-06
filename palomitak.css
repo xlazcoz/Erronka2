@@ -144,7 +144,7 @@ details[open] summary:hover {
     font-size: 1.2em;
 }
 
-/* Precio */
+
 .sarrera_prezioa {
     font-weight: bold;
     color: #ffffff;
@@ -154,7 +154,7 @@ details[open] summary:hover {
     font-size: 1.1em;
 }
 
-/* Controles de cantidad */
+
 .sarrera_botoiak {
     display: flex;
     align-items: center;
@@ -194,7 +194,7 @@ details[open] summary:hover {
     margin: 0;
 }
 
-/* Imágenes de palomitas */
+
 img:not(.logo img, .logos img) {
     width: 100px;
     height: 100px;
@@ -202,7 +202,6 @@ img:not(.logo img, .logos img) {
     object-fit: cover;
 }
 
-/* Botón de compra */
 .erosi-botoia {
     text-align: center;
     margin: 40px 0;
@@ -217,7 +216,7 @@ img:not(.logo img, .logos img) {
     border: none;
     border-radius: 25px;
     padding: 15px 50px;
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -226,42 +225,46 @@ img:not(.logo img, .logos img) {
     letter-spacing: 1px;
 }
 
+.boton-atras button {
+    background: #d6d915;
+    color: #2d2749;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 20px;
+    text-transform: uppercase;
+
+}
 .erosi-botoia button:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(214, 217, 21, 0.6);
 }
 
-/* Dialog de notificación */
+
 dialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25px;
+    right: 20px;
+    margin-left: 44%;
     border-radius: 10px;
-    background: #d6d915;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    background: yellow;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 200px;
     border: none;
-    padding: 0;
-    margin: 0;
-    max-width: 250px;
-    text-align: center;
 }
 
-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.5);
-}
 
 dialog h3 {
-    background: #d6d915;
+    background: yellow;
     color: #2d2749;
-    margin: 0;
-    padding: 20px;
-    font-size: 1.3em;
-    border-radius: 10px 10px 0 0;
-    font-weight: bold;
-}
 
-/* Footer */
+
+}
 .footer1 {
     background: #2d2749;
     border-top: 2px solid #ffffff;
