@@ -1,6 +1,5 @@
 * {
     margin: 0;
-
 }
 
 body {
@@ -96,44 +95,55 @@ details[open] summary:hover {
 .menua li a:hover {
     color: #2d2749;
     background: #d6d915;
-    ;
 }
 
 
-
-.goiko_titulu h1{
-
+.goiko_titulu h1 {
     color: white;
-    font-family:"Kanit", sans-serif;
+    font-family: "Kanit", sans-serif;
     text-shadow: 3px 5px 10px #d6d915;
     text-align: center;
-    margin-top: 30px;
-
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    letter-spacing: 1px;
 }
 
-#aperitiboimg_box{
-
+#aperitiboimg_box {
     width: 800px;
     height: 600px;
-    background-color: #5b3666;
-    border: solid 1px #e0e0e0;
+    background: #322c52;
+    border: 3px solid #d6d915;
     border-radius: 50px;
     text-align: center;
-    margin: auto;
+    margin: 30px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
- 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
-#aperitiboimg_box img{
+#aperitiboimg_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px yellow;
+    border-color: #b8bb12;
+}
 
+#aperitiboimg_box img {
     width: 500px;
     height: 500px;
     border-radius: 15px;
-    
+    transition: transform 0.3s ease;
+    border: 2px solid #8a7ec7;
 }
+
+#aperitiboimg_box:hover img {
+    transform: scale(1.05);
+}
+
+
+
 
 
 .footer1 {
