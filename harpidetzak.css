@@ -284,3 +284,7 @@ details[open] summary:hover {
     font-weight: 400;
     font-style: normal;
 }
+
+body img {
+    opacity: 50%;
+}
