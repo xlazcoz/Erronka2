@@ -13,4 +13,12 @@ public pelikula(String izena, String generoa, int iraupena){
     this.iraupena=iraupena;
 }
 
+public void erakutsiInfo(){
+
+        System.out.println("Izena: " + izena);
+        System.out.println("Generoa: " + generoa);
+        System.out.println("Iraupena: " + iraupena + " min");
+
+}
+
 }
