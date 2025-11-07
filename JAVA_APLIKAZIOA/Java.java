@@ -17,67 +17,29 @@ public class Java {
     public static void main(String[] args) {
 
         ArrayList<String> hilabeteak = new ArrayList<>();
-        
-        hilabeteak.add("1.Urtarrila");
-        hilabeteak.add("2.Otsaila");
-        hilabeteak.add("3.Martxoa");
-        hilabeteak.add("4.Apirila");
-        hilabeteak.add("5.Maiatza");
-        hilabeteak.add("6.Ekaina");
-        hilabeteak.add("7.Uztaila");
-        hilabeteak.add("8.Abuztua");
-        hilabeteak.add("9.Iraila");
-        hilabeteak.add("10.Urria");
-        hilabeteak.add("11.Azaroa");
-        hilabeteak.add("12.Abendua");
 
-    
+        hilabeteak.add("Urtarrila");
+        hilabeteak.add("Otsaila");
+        hilabeteak.add("Martxoa");
+        hilabeteak.add("Apirila");
+        hilabeteak.add("Maiatza");
+        hilabeteak.add("Ekaina");
+        hilabeteak.add("Uztaila");
+        hilabeteak.add("Abuztua");
+        hilabeteak.add("Iraila");
+        hilabeteak.add("Urria");
+        hilabeteak.add("Azaroa");
+        hilabeteak.add("Abendua");
+
         System.out.println(MAGENTA + "Ongi etorri Zinema Usurbilera!" + reset);
-        System.out.println("Aukeratu hilabete bat: "+hilabeteak);
-        int hilabete = sc.nextInt();
-      
-        switch(hilabete){
-            case 1:
-            System.out.println("Aukeratu Urtarrilaren asteburu bat(1-4)");
-            break;
-            case 2:
-            System.out.println("Aukeratu Otsailaren asteburu bat(1-5)");
-            break;
-            case 3:
-            System.out.println("Aukeratu Martxoaren asteburu bat(1-5)");
-            break;
-            case 4:
-            System.out.println("Aukeratu Apirilaren asteburu bat(1-5)");
-            break;
-            case 5:
-            System.out.println("Aukeratu Maiatzaren asteburu bat(1-5)");
-            break;
-            case 6:
-            System.out.println("Aukeratu Ekainaren asteburu bat(1-5)");
-            break;
-            case 7: 
-            System.out.println("Aukeratu Uztailaren asteburu bat(1-5)");
-            break;
-            case 8: 
-            System.out.println("Aukeratu Abuztuaren asteburu bat(1-5)");
-            break;
-            case 9:
-            System.out.println("Aukeratu Irailaren asteburu bat(1-5)");
-            break;
-            case 10:
-            System.out.println("Aukeratu Urriaren asteburu bat(1-5)");
-            break;
-            case 11:
-            System.out.println("Aukeratu Azaraoaren asteburu bat(1-5)");
-            break;
-            case 12:
-            System.out.println("Aukeratu Abenduaren asteburu bat(1-5)");
-            break;
-            default:
-              System.out.println(GORRIA + "ERROREA: " + reset + "Sartutako hilabetea ez da baliogarria");
+        System.out.println("Aukeratu hilabete bat: " + hilabeteak);
+        String hilabete = sc.nextLine();
 
-        }
+        System.out.println("Aukeratu " + hilabete + "-ren asteburu bat (1-5)");
+
         int asteburua = sc.nextInt();
+
+        
         if (asteburua >= 6 || asteburua <= 0) {
             System.out.println(GORRIA + "ERROREA: " + reset + "Sartutako asteburua ez da baliogarria");
         } else {
