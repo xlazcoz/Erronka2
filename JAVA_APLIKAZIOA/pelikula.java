@@ -21,4 +21,9 @@ public void erakutsiInfo(){
 
 }
 
+public String izenaEman(){
+
+   return izena;
+}
+
 }
