@@ -83,12 +83,16 @@ public class Java {
                     } else {
                         // ARETO AUKERATU
                         System.out.println(BERDEA + "Aukeratu nahi duzun areto(1-5):" + reset);
-                        for (int i = 1; i < 6; i++) {
+
+                        
+                        for (int i = 1; i < areto.size(); i++) {
 
                             System.out.println(areto.get(i));
                         }
 
                         int aukareto = sc.nextInt();
+
+                       
 
                         System.out.println(LARANJA + "--AUKERATUTAKO GELAREN INFORMAZIOA--" + reset);
 
@@ -114,6 +118,7 @@ public class Java {
                                 break;
                             default:
                                 System.out.println("Ez du balio ");
+                                break;
                         }
                         // LARUNBATA EDO IGANDEA AUKERATU
                         System.out.println(BERDEA + "Aukeratu asteburuko egun bat(1.Larunbata edo 2.Igandea)" + reset);
@@ -217,7 +222,7 @@ public class Java {
                     break;
                 case 2:
                     System.out.println(LARANJA + "---PELIKULEN INFORMAZIOA OROKORRA---" + reset);
-                    System.out.println(BERDEA+"Hauek dira eskuragarri daukagun pelikulak:" +reset);
+                    System.out.println(BERDEA+"Hauek dira eskuragarri dauzkagun pelikulak:" +reset);
 
                     for (int i=0; i<pelikulak.size();i++){
 
@@ -245,6 +250,9 @@ public class Java {
                             "Igandeak: " + HORIA + "8:00-14:00, 16:00-23:00." + reset);
                     break;
                 case 5:
+
+                    System.out
+                            .println(URDINA + "Eskerrikasko gure zerbitzua aukeratzeagatik. Agur!" + reset);
                     System.exit(0);
             }
         }
@@ -277,7 +285,7 @@ public class Java {
 
         int nagusikop = sc.nextInt();
 
-        double preziotot = +(heldukop * 8.40) + (nagusikop * 5.40);
+        double preziotot = (heldukop * 8.40) + (nagusikop * 5.40);
         int sarrerakoptot = umekop + heldukop + nagusikop;
         int koderandom = (int) (Math.random() * 9000) + 1000;
 
