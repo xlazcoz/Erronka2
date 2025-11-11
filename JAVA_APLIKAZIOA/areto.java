@@ -2,6 +2,7 @@ package JAVA_APLIKAZIOA;
 
 public class areto {
 
+    /*areto klasea bere atributuekin  */
     private String izena;
     private int edukiera;
 

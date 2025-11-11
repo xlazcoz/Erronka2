@@ -2,6 +2,8 @@ package JAVA_APLIKAZIOA;
 
 public class pelikula {
 
+    /*pelikula klasea bere atributuekin */
+
     private String izena;
     private String generoa;
     private int iraupena;

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"JAVA_APLIKAZIOA","l":"areto"},{"p":"JAVA_APLIKAZIOA","l":"kartelera"},{"p":"JAVA_APLIKAZIOA","l":"Main"},{"p":"JAVA_APLIKAZIOA","l":"objektuak"},{"p":"JAVA_APLIKAZIOA","l":"pelikula"},{"p":"JAVA_APLIKAZIOA","l":"proiekzioa"}];updateSearchResults();

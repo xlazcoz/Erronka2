@@ -3,6 +3,7 @@ package JAVA_APLIKAZIOA;
 
 public class objektuak{
 
+/*objektuak sortzeko erabili dugun dokumentua, hemen pelikula eta areto objektuak sortuta daude */
 
 
 public static pelikula p1  = new pelikula("Maspalomas",          "Drama",                          115);
@@ -27,6 +28,8 @@ public static areto g2= new areto("Superheroien aretoa", 90);
 public static areto g3= new areto("Thriller aretoa", 100);
 public static areto g4= new areto("Zientzia fikziozko aretoa", 120);
 public static areto g5= new areto("Komedia aretoa", 90);
+
+
 
 
 
